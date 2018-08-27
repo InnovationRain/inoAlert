@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+
+/* INO TOAST ALIGNMENT */
+div#toast-parent-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+}
+
+.toast-bottom-left{
+
+}
+
+.toast-bottom-right{
+    /*TODO*/
+}
+
+.toast-bottom-middle{
+    /*TODO*/
+}
+
+.toast-top-left{
+    /*TODO*/
+}
+
+.toast-top-right {
+    /*TODO*/
+}
+
+.toast-top-middle{
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%,-50%);
+}
+
+.toast-center{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+/* INO TOAST ALIGNMENT */
+
+
+/* INO TOAST*/
+
+
+
+.ino-toast {
+    transition: all 3s;
+    font-family: 'Questrial', sans-serif;
+    padding: 10px;
+    color: white;
+    min-width: 200px;
+    width: 200px;
+    margin: 7% 22%;
+    border-bottom: 10px solid #ded6d6;
+    border-right: 10px solid #ddd6d6;
+    border-top-right-radius: 75px;
+    position: relative;
+}
+.ino-toast-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.ino-close-icon {
+    position: absolute;
+    right: -16px;
+    top: -13px;
+    text-align: center;
+    background: #e63c3c;
+    padding: 6px;
+    border-radius: 50%;
+    width: 20px;
+    padding-top: 8px;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: 0 0 7px 1px white;
+    cursor: pointer;
+}
+
+.ino-toast-info{
+  /*TODO*/
+}
+
+/* INO TOAST*/
+
+
+/* TOAST TYPES */
+.ino-error{
+   background: firebrick;
+}
+.ino-success{
+   background: forestgreen;
+}
+.ino-warning{
+   background: orange;
+}
+/* TOAST TYPES */
+
+
+
+
+
+/*INO TOAST ANIMATION*/
+
+
+.slide-left {
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-right {
+    -webkit-animation: slide-right 2.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 2.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+}
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+
+
+/*INOT TOAST ANIMATION*/

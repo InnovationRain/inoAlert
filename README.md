@@ -5,9 +5,9 @@ Simple toast alerts
    
        inoAlert.init({
            alignment:"toast-top-right",
-           closeIcon</span> : true,
-           time</span> : 2000,
-           toastCloseAnimation</span> "example-animation-class-open",
+           closeIcon : true,
+           time : 2000,
+           toastCloseAnimation: "example-animation-class-open",
            toastOpenAnimation : "example-animation-class-close"
        });
 

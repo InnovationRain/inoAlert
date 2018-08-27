@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="inoAlert.css">
+</head>
+<body>
+
+<button class="ino-error" onclick="inoAlert.error('Some information','Error')">Error</button>
+<button class="ino-warning" onclick="inoAlert.warning('Some information','Warning')">Warning</button>
+<button class="ino-success" onclick="inoAlert.success('Some information','Success')">Success</button>
+
+
+<code>
+    <pre>
+    <span class="ob-pr">inoAlert</span>.<span class="funct">init</span>({
+        <span class="prop">alignment</span> : <span class="str">"toast-top-right"</span>,
+        <span class="prop">closeIcon</span> : <span class="bool">true</span>,
+        <span class="prop">time</span> : <span class="int">2000</span>,
+        <span class="prop">toastCloseAnimation</span> :<span class="str">"example-animation-class-open"</span>,
+        <span class="prop">toastOpenAnimation</span> : <span class="str">"example-animation-class-close"</span>
+    });
+
+        <span class="ob-pr">inoAlert</span>.<span class="funct">error</span>(<span class="str">"Message header"</span>,<span class="str">"Message text"</span>);
+
+        <span class="ob-pr">inoAlert</span>.<span class="funct">warning</span>(<span class="str">"Message header"</span>,<span class="str">"Message text"</span>);
+
+        <span class="ob-pr">inoAlert</span>.<span class="funct">success</span>(<span class="str">"Message header"</span>,<span class="str">"Message text"</span>);
+  </pre>
+</code>
+
+<script src="inoAlert.js"></script>
+
+
+<style>
+    button {
+        width: 130px;
+        padding: 6px;
+        color: white;
+        font-size: 25px;
+        border: none;
+        border-right: 5px solid #292828;
+        border-bottom: 5px solid #737171;
+        font-family: initial;
+    }
+    button:active{
+        border: none !important;
+        cursor: pointer;
+    }
+    span.ob-pr {
+        color: orange;
+        font-weight: bold;
+    }
+    span.prop {
+        color: blue;
+    }
+    span.str {
+        color: green;
+        font-weight: bold;
+    }
+    span.funct {
+        color: #FF5722;
+    }
+    span.int {
+        color: #000058;
+    }
+    span.bool {
+        color: red;
+        font-weight: bold;
+    }
+
+
+</style>
+
+
+</body>
+</html>
